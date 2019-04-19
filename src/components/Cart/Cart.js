@@ -3,9 +3,9 @@ import axios from "axios"
 import { connect } from "react-redux"
 import { Elements, StripeProvider } from "react-stripe-elements"
 
-import CartBoards from "./CartBoards"
-import { getCart } from "../ducks/reducers/cartReducer"
-import CheckoutForm from "./CheckoutForm"
+import CartBoards from "../CartBoards/CartBoards"
+import { getCart } from "../../ducks/reducers/cartReducer"
+import CheckoutForm from "../CheckoutForm"
 
 class Cart extends Component {
   componentDidMount() {

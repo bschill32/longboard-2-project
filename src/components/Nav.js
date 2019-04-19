@@ -9,9 +9,9 @@ function Nav(props) {
       </h1>
       <div className="links">
         <a href="#home">Home</a>
-        <a href="#boards">LongBoards</a>
-        <a href="#team">Team</a>
-        <a href="#about">About</a>
+        <a href="#boards">Longboards</a>
+        {/* <a href="#team">Team</a> */}
+        {/* <a href="#about">About</a> */}
         <a href="#cart">Cart{/* <i class="fas fa-cart-arrow-down" /> */}</a>
       </div>
     </div>

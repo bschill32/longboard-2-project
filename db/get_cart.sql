@@ -1,4 +1,3 @@
-select *
-from cart
-join boards on cart.board_id = boards.id
-order by boards.id
+select * from cart
+join board on board.id = cart.board_id
+order by board.id

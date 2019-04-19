@@ -1,41 +1,54 @@
 import React, { Component } from "react"
 import axios from "axios"
-import { getCart } from "../../ducks/reducers/cartReducer"
 import { connect } from "react-redux"
 
-class Board extends Component {
-  addToCart = id => {
-    axios.post(`/api/cart/${id}`).then(results => {
-      this.props.getCart(results.data)
-    })
-  }
+import { addToCart } from "../../ducks/reducers/cartReducer"
 
+class Board extends Component {
   render() {
-    let { name, dim, image, price, id } = this.props.board
+    let {
+      id,
+      name,
+      phrase,
+      speed,
+      shape,
+      range,
+      image,
+      price
+    } = this.props.board
     return (
       <div className="board-space">
-        <div class="tooltip1">
+        <div className="tooltip1">
           <img
-            class="board-zoom"
+            className="board-zoom"
             width="191px"
             height="293px"
             src={image}
             alt=""
           />
-          <span class="tooltiptext1">
+          {/* <span className="tooltiptext1">
             {dim}
             <br /> ${price}
             <br />
-            <button class="board-button" onClick={() => this.addToCart(id)}>
+            <button className="board-button" onClick={() => this.props.addToCart(id)}>
               Add To Cart
             </button>
-          </span>
+          </span> */}
         </div>
         <div className="board-box">
           <h3 className="board-name">{name}</h3>
-          {/* <p>{dim}</p>
-                    <p>${price}</p> */}
-          {/* <button class='board-button' onClick={() => this.addToCart(id)}>Add To Cart</button> */}
+          <p>{phrase}</p>
+          <p>{speed}</p>
+          <p>{shape}</p>
+          <p>{range}</p>
+          <p>${price}</p>
+
+          <button
+            className="board-button"
+            onClick={() => this.props.addToCart(id)}
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     )
@@ -44,5 +57,5 @@ class Board extends Component {
 
 export default connect(
   null,
-  { getCart }
+  { addToCart }
 )(Board)

@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 
 import "./App.css"
-import AllBoards from "./components/Allboards/AllBoards"
+import AllBoards from "./components/AllBoards/AllBoards"
 import Home from "./components/Home"
 import Team from "./components/Team"
 import About from "./components/About"
-import Cart from "./components/Cart"
+import Cart from "./components/Cart/Cart"
 import Nav from "./components/Nav"
 
 class App extends Component {
@@ -38,8 +38,8 @@ class App extends Component {
         >
           <Home />
           <AllBoards />
-          <Team />
-          <About />
+          {/* <Team /> */}
+          {/* <About /> */}
           <Cart />
         </div>
       </div>

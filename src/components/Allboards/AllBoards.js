@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 
 import EachBoard from "../EachBoard/EachBoard"
-import { getAllBoards } from "./../../ducks/reducers/boardReducer"
+import { getAllBoards } from "../../ducks/reducers/boardReducer"
 
 class AllBoards extends Component {
   componentDidMount() {

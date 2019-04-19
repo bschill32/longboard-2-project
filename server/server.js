@@ -38,6 +38,10 @@ app.delete("/api/cart/:id", BoardCtrl.deleteBoard)
 app.delete("/api/cart/checkout", BoardCtrl.checkout)
 
 //Auth
+app.post("/auth/register", AuthCtrl.register)
+app.post("/auth/login", AuthCtrl.login)
+app.get("/auth/user-data", AuthCtrl.userData)
+app.get("/auth/logout", AuthCtrl.logout)
 
 //Stripe
 // app.post("/api/charge", StripeCtrl.Credit)

@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import axios from "axios"
 import { connect } from "react-redux"
-import { getCart } from "../ducks/reducers/cartReducer"
+
+import { getCart } from "../../ducks/reducers/cartReducer"
 
 class CartBoards extends Component {
   updateQuantity = update => {
