@@ -1,0 +1,17 @@
+#reviews::before {
+  display: block;
+  content: " ";
+  margin-top: -9vh;
+  height: 9vh;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.reviews-container {
+  /* background-image: url("https://www.desktopbackground.org/download/2560x1440/2015/12/23/1062154_top-hd-chalk-board-wallpapers_3600x3600_h.jpg"); */
+  background-size: cover;
+  height: 140vh;
+  width: 100vw;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}

@@ -1,6 +1,6 @@
-/* * {
-  font-family: "Montserrat", sans-serif;
-} */
+* {
+  font-family: "Lato", sans-serif;
+}
 
 .page-container {
   background-image: linear-gradient(#10a1c9 20%, #61dafb 80%, #10a1c9);
@@ -10,9 +10,9 @@
 
 .page-title {
   /* background-image: linear-gradient(#C35910 20%, #61dafb 80%, #C35910); */
-  color: rgb(230, 230, 230);
+  color: black(230, 230, 230);
   margin: 0;
   padding: 1.5vh 10%;
   font-family: "Rock Salt", cursive;
-  text-shadow: 3px 5px 10px #000000;
+  text-shadow: 3px 5px 5px #000000;
 }

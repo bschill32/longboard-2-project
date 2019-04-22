@@ -8,6 +8,8 @@ import CartBoards from "../CartBoards/CartBoards"
 import { getCart } from "../../ducks/reducers/cartReducer"
 import CheckoutForm from "../CheckoutForm"
 
+// const { STRIPE_TEST_KEY } = process.env
+
 class Cart extends Component {
   componentDidMount() {
     this.props.getCart()
@@ -15,9 +17,9 @@ class Cart extends Component {
 
   checkout = () => {
     if (this.props.cartBoards.length) {
-      axios.delete("/api/cart/checkout").then(results => {
+      axios.delete("/api/cart/checkout").then(res => {
         alert("Payment Successful!")
-        this.props.getCart(results.data)
+        this.props.getCart(res.data)
       })
     } else {
       alert("You need to add something to your Cart!")

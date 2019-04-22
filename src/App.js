@@ -2,10 +2,14 @@ import React, { Component } from "react"
 
 import "./reset.css"
 import "./App.css"
-import AllBoards from "./components/AllBoards/AllBoards"
-import Home from "./components/Home/Home"
-import Cart from "./components/Cart/Cart"
 import Nav from "./components/Nav/Nav"
+import Home from "./components/Home/Home"
+import OurMission from "./components/OurMission/OurMission"
+import AllBoards from "./components/AllBoards/AllBoards"
+import Video from "./components/Video/Video"
+import Reviews from "./components/Reviews/Reviews"
+import Warranty from "./components/Warranty/Warranty"
+import Cart from "./components/Cart/Cart"
 // import Login from "./components/Login/Login"
 
 class App extends Component {
@@ -38,7 +42,11 @@ class App extends Component {
           onScroll={this.withScroll}
         >
           <Home />
+          <OurMission />
           <AllBoards />
+          <Video />
+          <Reviews />
+          <Warranty />
           <Cart />
         </div>
       </div>

@@ -9,10 +9,13 @@ function Nav(props) {
       </h1>
       <div className="links">
         <a href="#home">Home</a>
-        <a href="#boards">Longboards</a>
-        {/* <a href="#team">Team</a> */}
-        {/* <a href="#about">About</a> */}
-        <a href="#cart">Cart{/* <i class="fas fa-cart-arrow-down" /> */}</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#boards">Boards</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#warranty">Warranty</a>
+        <a href="#cart">
+          <i class="fas fa-cart-arrow-down" />
+        </a>
       </div>
     </div>
   )
