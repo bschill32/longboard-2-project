@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, withRouter } from "react-router-dom"
+import "./Nav.css"
 
 function Nav(props) {
   return (
@@ -18,4 +18,4 @@ function Nav(props) {
   )
 }
 
-export default withRouter(Nav)
+export default Nav

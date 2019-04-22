@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 
+import "./AllBoards.css"
 import EachBoard from "../EachBoard/EachBoard"
 import { getAllBoards } from "../../ducks/reducers/boardReducer"
 

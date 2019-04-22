@@ -3,6 +3,7 @@ import axios from "axios"
 import { connect } from "react-redux"
 import { Elements, StripeProvider } from "react-stripe-elements"
 
+import "./Cart.css"
 import CartBoards from "../CartBoards/CartBoards"
 import { getCart } from "../../ducks/reducers/cartReducer"
 import CheckoutForm from "../CheckoutForm"

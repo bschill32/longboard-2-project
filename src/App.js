@@ -1,12 +1,12 @@
 import React, { Component } from "react"
 
+import "./reset.css"
 import "./App.css"
 import AllBoards from "./components/AllBoards/AllBoards"
-import Home from "./components/Home"
-import Team from "./components/Team"
-import About from "./components/About"
+import Home from "./components/Home/Home"
 import Cart from "./components/Cart/Cart"
-import Nav from "./components/Nav"
+import Nav from "./components/Nav/Nav"
+// import Login from "./components/Login/Login"
 
 class App extends Component {
   withScroll = e => {
@@ -31,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        {/* <Login /> */}
         <Nav />
         <div
           className="anchorContainer smooth-scroll"
@@ -38,8 +39,6 @@ class App extends Component {
         >
           <Home />
           <AllBoards />
-          {/* <Team /> */}
-          {/* <About /> */}
           <Cart />
         </div>
       </div>

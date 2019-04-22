@@ -1,0 +1,13 @@
+.home {
+  background-image: url("./../../assets/Home.jpg");
+  /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+  background-size: cover;
+  display: flex;
+  height: 130vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 9vh;
+  margin-top: -30vh;
+}

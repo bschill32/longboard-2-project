@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 import { connect } from "react-redux"
 
+import "./CartBoards.css"
 import { getCart } from "../../ducks/reducers/cartReducer"
 
 class CartBoards extends Component {
@@ -29,20 +30,26 @@ class CartBoards extends Component {
       <div className="cart-space">
         <h3 className="cart-name">{name}</h3>
         <img
-          class="board-zoom"
+          className="board-zoom"
           width="70px"
           height="100px"
           src={image}
           alt=""
         />
         <p>Quantity {quantity}</p>
-        <button class="cart-button" onClick={() => this.updateQuantity("up")}>
+        <button
+          className="cart-button"
+          onClick={() => this.updateQuantity("up")}
+        >
           +
         </button>
-        <button class="cart-button" onClick={() => this.updateQuantity("down")}>
+        <button
+          className="cart-button"
+          onClick={() => this.updateQuantity("down")}
+        >
           -
         </button>
-        <button class="cart-button" onClick={this.deleteItem}>
+        <button className="cart-button" onClick={this.deleteItem}>
           Delete
         </button>
         <p>${Math.floor(price * quantity * 100) / 100}</p>

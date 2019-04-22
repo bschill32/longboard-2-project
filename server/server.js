@@ -28,6 +28,7 @@ app.use(
 // app.use(express.static(`${__dirname}/../build`))
 
 //Boards
+
 app.get("/api/boards", BoardCtrl.getBoards)
 
 //Cart
