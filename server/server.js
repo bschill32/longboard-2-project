@@ -45,7 +45,7 @@ app.get("/auth/user-data", AuthCtrl.userData)
 app.get("/auth/logout", AuthCtrl.logout)
 
 //Stripe
-// app.post("/api/charge", StripeCtrl.Credit)
+app.post("/api/charge", StripeCtrl.Credit)
 
 app.listen(SERVER_PORT, () =>
   console.log(`When in doubt just delete it... ${SERVER_PORT}`)

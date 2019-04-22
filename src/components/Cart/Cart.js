@@ -14,7 +14,7 @@ class Cart extends Component {
   }
 
   checkout = () => {
-    if (this.props.cart.length) {
+    if (this.props.cartBoards.length) {
       axios.delete("/api/cart/checkout").then(results => {
         alert("Payment Successful!")
         this.props.getCart(results.data)
@@ -37,7 +37,7 @@ class Cart extends Component {
         </div>
         <div className="cart-container">
           <div className="cart-info">{cart}</div>
-          {/* <div className="stripe-container">
+          <div className="stripe-container">
             <div className="stripe">
               <StripeProvider apiKey="pk_test_3LbwziJs8XwqPy2dMzCkyeU0">
                 <div className="example">
@@ -48,7 +48,7 @@ class Cart extends Component {
                 </div>
               </StripeProvider>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     )
