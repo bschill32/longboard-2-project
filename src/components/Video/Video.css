@@ -7,12 +7,44 @@
   pointer-events: none;
 }
 
-.video-container {
-  /* background-image: url("https://www.desktopbackground.org/download/2560x1440/2015/12/23/1062154_top-hd-chalk-board-wallpapers_3600x3600_h.jpg"); */
+.v-container {
   background-color: #f2f2f2;
-  background-size: cover;
-  height: 140vh;
+  margin-top: 6.38rem;
+  margin-bottom: 6.38rem;
+  position: relative;
+}
+
+.vc-1 {
+  height: 100%;
+  width: auto;
+  position: relative;
+  /* background-color: purple; */
+}
+
+.v-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.vt-box {
   width: 100vw;
-  padding-top: 90px;
-  padding-bottom: 50px;
+  /* height: 100vh; */
+}
+
+.vt-box h1 {
+  font-weight: 800;
+  /* text-transform: uppercase; */
+  font-size: 6vw;
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+}
+
+.v-box {
+  position: relative;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  overflow: hidden;
 }

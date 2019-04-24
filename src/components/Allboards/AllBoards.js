@@ -18,9 +18,9 @@ class AllBoards extends Component {
 
     return (
       <div id="boards">
-        <div className="page-container">
+        {/* <div className="page-container">
           <h1 className="page-title">Longboards</h1>
-        </div>
+        </div> */}
         <div className="boards-container">
           <div className="surfboards">{allBoards}</div>
         </div>

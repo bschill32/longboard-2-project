@@ -1,16 +1,95 @@
 import React, { Component } from "react"
 
 import "./Reviews.css"
+// import poster from "./../../assets/Sunset.jpg"
 
 class Reviews extends Component {
   render() {
     return (
       <div id="reviews">
-        <div className="page-container">
+        {/* <div className="page-container">
           <h1 className="page-title">Reviews</h1>
-        </div>
+        </div> */}
         <div className="reviews-container">
-          <div className="reviews-info" />
+          <div className="r-box">
+            <div className="info">
+              <div className="name">
+                <h5>Timo D.</h5>
+                <span>11/9/2018</span>
+              </div>
+              <div className="location">Oxford, United Kingdom</div>
+              <div className="rating">
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+              </div>
+              <div className="catch-phrase">Truly Amazing</div>
+              <div className="scrolling-box">
+                <p className="overview">
+                  The amount of time I save is huge. I’ve never gone 1 day
+                  without at least one person asking me how I’m riding my Mini
+                  S. 10 out of 10.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="r-box">
+            <div className="info">
+              <div className="name">
+                <h5>Jeff H.</h5>
+                <span>3/6/2018</span>
+              </div>
+              <div className="location">Napa, CA</div>
+              <div className="rating">
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+              </div>
+              <div className="catch-phrase">10 Out of 10</div>
+              <div className="scrolling-box">
+                <p className="overview">
+                  I received the Boosted Stealth for Christmas and it is
+                  absolutely awesome. I have never owned an electric skateboard
+                  before but I am pretty sure this one has ruined me for all
+                  other boards. I have surfed for over 30 years and snowboarded
+                  for over 20 and this skateboard carves just like both. The
+                  torque is unbelievable. Now I have to fight my two children to
+                  get board time but it is an awesome addition to the family.
+                  Great job Boosted design team.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="r-box">
+            <div className="info">
+              <div className="name">
+                <h5>Bear C.</h5>
+                <span>2/21/2019</span>
+              </div>
+              <div className="location">Honolulu, HI</div>
+              <div className="rating">
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+                <span class="fa fa-star " />
+              </div>
+              <div className="catch-phrase">BEST on the market</div>
+              <div className="scrolling-box">
+                <p className="overview">
+                  Out of all the electric boards, this is still the best I can
+                  find. Some are faster, or have better range, but none are as
+                  high quality. The Boosted is the full package -- the best of
+                  both worlds, range and speed. Boosted is the only electric
+                  board I choose to ride.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -18,3 +97,20 @@ class Reviews extends Component {
 }
 
 export default Reviews
+{
+  /* <div id="reviews">
+  <div className="page-container">
+    <h1 className="page-title">Reviews</h1>
+  </div>
+  <div className="r-container">
+    <div className="r-box">
+      <div className="rb-1">
+        <div className="rb-2">
+          <div className="rb-3">data</div>
+          <div className="rb-3">data</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> */
+}
