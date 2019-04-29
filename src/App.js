@@ -5,7 +5,6 @@ import "./App.css"
 import Nav from "./components/Nav/Nav"
 import Home from "./components/Home/Home"
 import OurMission from "./components/OurMission/OurMission"
-import AllBoards from "./components/AllBoards/AllBoards"
 import Video from "./components/Video/Video"
 import Reviews from "./components/Reviews/Reviews"
 import Warranty from "./components/Warranty/Warranty"
@@ -44,7 +43,7 @@ class App extends Component {
         >
           <Home />
           <OurMission />
-          <AllBoards />
+          {/* <AllBoards /> */}
           <Video />
           <Reviews />
           <Warranty />
