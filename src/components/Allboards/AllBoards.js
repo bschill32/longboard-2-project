@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
+// import Carousel from 'react-bootstrap/Carousel'
 
 import "./AllBoards.css"
 import EachBoard from "../EachBoard/EachBoard"
@@ -22,7 +23,7 @@ class AllBoards extends Component {
           <h1 className="page-title">Longboards</h1>
         </div> */}
         <div className="boards-container">
-          <div className="surfboards">{allBoards}</div>
+          <div className="longboards">{allBoards}</div>
         </div>
       </div>
     )

@@ -34,11 +34,11 @@ class Cart extends Component {
     })
     return (
       <div id="cart">
-        <div className="page-container">
+        {/* <div className="page-container">
           <h1 className="page-title">Cart</h1>
-        </div>
+        </div> */}
         <div className="cart-container">
-          <div className="cart-info">{cart}</div>
+          <div className="c-info">{cart}</div>
           <div className="stripe-container">
             <div className="stripe">
               <StripeProvider apiKey="pk_test_3LbwziJs8XwqPy2dMzCkyeU0">

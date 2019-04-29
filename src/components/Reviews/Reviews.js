@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 
 import "./Reviews.css"
-// import poster from "./../../assets/Sunset.jpg"
+import photo from "./../../assets/e-reviews.jpg"
 
 class Reviews extends Component {
   render() {
@@ -12,9 +12,12 @@ class Reviews extends Component {
         </div> */}
         <div className="reviews-container">
           <div className="r-box">
-            <div className="info">
-              <div className="name">
-                <h5>Timo D.</h5>
+            <div className="r-info">
+              <div className="r-name">
+                <div className="rn-1">
+                  <h5>Timo D.</h5>
+                  <hr />
+                </div>
                 <span>11/9/2018</span>
               </div>
               <div className="location">Oxford, United Kingdom</div>
@@ -36,9 +39,12 @@ class Reviews extends Component {
             </div>
           </div>
           <div className="r-box">
-            <div className="info">
-              <div className="name">
-                <h5>Jeff H.</h5>
+            <div className="r-info">
+              <div className="r-name">
+                <div className="rn-1">
+                  <h5>Jeff H.</h5>
+                  <hr />
+                </div>
                 <span>3/6/2018</span>
               </div>
               <div className="location">Napa, CA</div>
@@ -52,22 +58,25 @@ class Reviews extends Component {
               <div className="catch-phrase">10 Out of 10</div>
               <div className="scrolling-box">
                 <p className="overview">
-                  I received the Boosted Stealth for Christmas and it is
+                  I received the Backfire Stealth for Christmas and it is
                   absolutely awesome. I have never owned an electric skateboard
                   before but I am pretty sure this one has ruined me for all
                   other boards. I have surfed for over 30 years and snowboarded
                   for over 20 and this skateboard carves just like both. The
                   torque is unbelievable. Now I have to fight my two children to
                   get board time but it is an awesome addition to the family.
-                  Great job Boosted design team.{" "}
+                  Great job Backfire design team.
                 </p>
               </div>
             </div>
           </div>
           <div className="r-box">
-            <div className="info">
-              <div className="name">
-                <h5>Bear C.</h5>
+            <div className="r-info">
+              <div className="r-name">
+                <div className="rn-1">
+                  <h5>Bear C.</h5>
+                  <hr />
+                </div>
                 <span>2/21/2019</span>
               </div>
               <div className="location">Honolulu, HI</div>
@@ -83,13 +92,16 @@ class Reviews extends Component {
                 <p className="overview">
                   Out of all the electric boards, this is still the best I can
                   find. Some are faster, or have better range, but none are as
-                  high quality. The Boosted is the full package -- the best of
-                  both worlds, range and speed. Boosted is the only electric
+                  high quality. The Backfire is the full package -- the best of
+                  both worlds, range and speed. Backfire is the only electric
                   board I choose to ride.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+        <div className="e-reviews">
+          <img src={photo} alt="" />
         </div>
       </div>
     )

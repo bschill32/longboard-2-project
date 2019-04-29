@@ -8,23 +8,24 @@
 }
 
 .cart-container {
-  /* background-image: url("http://www.driftcentral.com/wp-content/uploads/2015/09/Dark-Grey-Background-Photo-HD-Wallpaper-2nwk9-Free.jpeg"); */
   background-color: #f2f2f2;
-  background-size: cover;
-  padding-top: 90px;
-  padding-bottom: 50px;
+  margin: 0 50px;
+  /* display: flex; */
+  /* margin-top: 6.38rem;
+  margin-bottom: 6.38rem; */
+  /* position: relative; */
 }
 
-.cart-info {
+.c-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: rgb(230, 230, 230);
+  /* color: rgb(230, 230, 230); */
   text-align: center;
 }
 
 .stripe-container {
-  margin: 0 38% 0 38%;
+  /* margin: 0 38% 0 38%; */
   border-radius: 12px;
 }
 

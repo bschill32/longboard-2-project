@@ -4,14 +4,14 @@
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-#mission::before {
+/* #mission::before {
   display: block;
   content: " ";
   margin-top: -9vh;
   height: 9vh;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .m-container {
   margin-top: 6.38rem;
@@ -65,6 +65,7 @@
   height: 0.38rem;
   width: 2.5rem;
   margin-top: 15px;
+  border-radius: 1px;
 }
 
 .m-box p {

@@ -14,6 +14,7 @@ import Cart from "./components/Cart/Cart"
 
 class App extends Component {
   withScroll = e => {
+    // console.log(e.target.scrollTop, e.target)
     let navbar = document.getElementById("navbar")
     // let anchorContainer = document.querySelector(".anchorContainer")
     if (e.target.scrollTop || e.target.scrollTop === 0) {
