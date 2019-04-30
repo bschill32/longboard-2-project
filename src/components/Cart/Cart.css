@@ -9,8 +9,9 @@
 
 .cart-container {
   background-color: #f2f2f2;
-  margin: 0 50px;
-  /* display: flex; */
+  margin: 0 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
   /* margin-top: 6.38rem;
   margin-bottom: 6.38rem; */
   /* position: relative; */
@@ -22,11 +23,94 @@
   justify-content: center;
   /* color: rgb(230, 230, 230); */
   text-align: center;
+  /* width: 765px; */
+  width: 64.8%;
+  height: 100%;
 }
 
 .stripe-container {
-  /* margin: 0 38% 0 38%; */
-  border-radius: 12px;
+  height: 100%;
+  width: 32.2%;
+}
+
+.sc-1 {
+  height: 100%;
+  /* border: black solid 1px; */
+  margin-bottom: 15px;
+  border-radius: 2px;
+  /* width: 380px; */
+  width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px 15px;
+}
+
+.sc-2 {
+  height: 100%;
+  /* border: black solid 1px; */
+  margin-bottom: 15px;
+  border-radius: 2px;
+  /* width: 380px; */
+  width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px 30px;
+}
+
+.s-order {
+  /* border: red solid 1px; */
+  display: block;
+  background: rgb(255, 255, 255);
+  /* border-radius: 2px; */
+  padding: 10px 15px 15px;
+}
+
+.s-order h2 {
+  margin: 0 0 18px;
+  letter-spacing: 0.08px;
+  letter-spacing: 0.08px;
+  /* font-size: 25px; */
+  font-size: 24px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+
+.s-order hr {
+  /* color: rgb(102, 102, 102); */
+  height: 0.01px;
+  width: 100%;
+  background: #bbb;
+}
+
+.so-div {
+  margin-bottom: 20px;
+  /* font-size: 17px; */
+  color: rgb(102, 102, 102);
+}
+
+.so-span {
+  float: right;
+}
+
+.so-total {
+  margin-top: 8px;
+  font-size: 21px;
+}
+
+.s-payment {
+  /* border: red solid 1px; */
+  display: block;
+  /* margin: 14px; */
+}
+
+.s-payment h2 {
+  margin: 0 0 18px;
+  letter-spacing: 0.08px;
+  letter-spacing: 0.08px;
+  /* font-size: 25px; */
+  font-size: 24px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
 }
 
 .stripe {
@@ -36,11 +120,8 @@
 }
 
 .example p {
-  font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 46px;
   margin: 0;
   margin-bottom: 20px;
-  color: #61dafb;
-  text-shadow: 3px 5px 10px #000;
 }

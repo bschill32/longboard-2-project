@@ -82,7 +82,7 @@ class CartBoards extends Component {
             </ul>
           </div>
           <div className="cin-bottom">
-            <h2>${Math.floor(price * quantity * 100) / 100}</h2>
+            {/* <h2>${Math.floor(price * quantity * 100) / 100}</h2> */}
             <p>
               Starting at $74/mo with
               <img src={affirm} />

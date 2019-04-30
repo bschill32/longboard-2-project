@@ -10,7 +10,7 @@ import Video from "./components/Video/Video"
 import Reviews from "./components/Reviews/Reviews"
 import Warranty from "./components/Warranty/Warranty"
 import Cart from "./components/Cart/Cart"
-// import Login from "./components/Login/Login"
+// import Login2 from "./components/Login2/Login2"
 
 class App extends Component {
   withScroll = e => {
@@ -36,7 +36,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <Login /> */}
+        {/* <Login2 /> */}
         <Nav />
         <div
           className="anchorContainer smooth-scroll"

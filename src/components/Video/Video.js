@@ -21,6 +21,7 @@ class Video extends Component {
             <div className="v-box">
               <ReactPlayer
                 url="https://videos.ctfassets.net/axbo81ontyws/fNaX5yZfr8XKE8f2WH5YZ/76350dfceaa693fbe852bdb4abcc0481/WEB_PAGE_BANNER_2.mp4"
+                muted={true}
                 playing
                 loop
                 height="100%"

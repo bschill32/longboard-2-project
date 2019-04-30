@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+
 import "./Nav.css"
 import backfire from "./../../assets/e-backfire1.png"
 
@@ -17,7 +18,7 @@ class Nav extends Component {
           <a href="#reviews">Reviews</a>
           <a href="#warranty">Warranty</a>
           <a href="#cart">
-            <i class="fas fa-cart-arrow-down" />
+            <i className="fas fa-cart-arrow-down" />
           </a>
         </div>
       </div>

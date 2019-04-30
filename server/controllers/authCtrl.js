@@ -21,27 +21,27 @@ module.exports = {
 
     req.session.user = createdUser
     res.send(
-      req.session.user
-      // {
-      //     message: 'logged in',
-      //     userData: req.session.user,
-      //     loggedIn: true
-      //   }
+      // req.session.user
+      {
+        message: "logged in",
+        userData: req.session.user,
+        loggedIn: true
+      }
     )
   },
 
   login: async (req, res) => {
     let db = req.app.get("db")
-    let { email, password } = req.body
+    let { login_email, login_password } = req.body
 
-    let userResponse = await db.getUserByEmail(email)
+    let userResponse = await db.getUserByEmail(login_email)
     let user = userResponse[0]
 
     if (!user) {
       return res.status(401).send({ message: "Account not found." })
     }
 
-    const isAuthenticated = bcrypt.compareSync(password, user.password)
+    const isAuthenticated = bcrypt.compareSync(login_password, user.password)
 
     if (!isAuthenticated) {
       return res.status(403).send({ message: "Incorrect password." })
@@ -51,11 +51,11 @@ module.exports = {
 
     req.session.user = user
     res.send(
-      req.session.user
-      // {
-      //     message: 'Log in successful',
-      //     loggedIn: true
-      //   }
+      // req.session.user
+      {
+        message: "Log in successful",
+        loggedIn: true
+      }
     )
   },
 

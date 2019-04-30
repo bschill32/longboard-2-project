@@ -18,7 +18,7 @@ class Warranty extends Component {
             <div className="wa-1">
               <h1>Ride Risk Free</h1>
               <h5>
-                We know you'll love your Boosted board. Ride today and
+                We know you'll love your Backfire board. Ride today and
                 experience it yourself.
               </h5>
             </div>
@@ -30,7 +30,7 @@ class Warranty extends Component {
               </div>
               <h3>Financing Available</h3>
               <p>
-                You don’t have to break the bank to ride Boosted. Pay over time
+                You don’t have to break the bank to ride Backfire. Pay over time
                 with easy, fixed monthly payments.
               </p>
             </div>
@@ -50,7 +50,7 @@ class Warranty extends Component {
               </div>
               <h3>30 Day Guarantee* </h3>
               <p>
-                Take it for a spin. If you don’t love your Boosted board, we’ll
+                Take it for a spin. If you don’t love your Backfire board, we’ll
                 gladly take it back for a refund.
               </p>
             </div>
