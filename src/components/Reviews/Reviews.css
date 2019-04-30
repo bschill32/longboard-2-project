@@ -1,15 +1,15 @@
 #reviews::before {
   display: block;
   content: " ";
-  margin-top: -9vh;
-  height: 9vh;
+  margin-top: -14vh;
+  height: 14vh;
   visibility: hidden;
   pointer-events: none;
 }
 
 .reviews-container {
   /* border: solid black 1px; */
-  padding-top: 0.94rem;
+  /* padding-top: 0.94rem; */
   background-color: #f2f2f2;
   display: flex;
   flex-direction: row;

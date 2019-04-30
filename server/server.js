@@ -36,7 +36,7 @@ app.get("/api/cart", BoardCtrl.getCart)
 app.post("/api/cart/:id", BoardCtrl.addToCart)
 app.put("/api/cart/:id", BoardCtrl.updateQuantity)
 app.delete("/api/cart/:id", BoardCtrl.deleteBoard)
-app.delete("/api/cart/checkout", BoardCtrl.checkout)
+app.delete("/api/checkout", BoardCtrl.checkout)
 
 //Auth
 app.post("/auth/register", AuthCtrl.register)

@@ -21,12 +21,16 @@ class CheckoutForm extends Component {
   }
 
   render() {
-    if (this.state.complete) return <h1>Payment Successful</h1>
+    if (this.state.complete)
+      return (
+        <h1 className="success">
+          Payment Successful <i class="fas fa-check-circle" />
+        </h1>
+      )
     return (
       <div className="checkout">
-        {/* <p>Would you like to complete the purchase?</p> */}
-        <CardElement />
-        <button className="cart-button" onClick={this.submit}>
+        <CardElement className="c-pay" />
+        <button className="c-button" onClick={this.submit}>
           Buy Now
         </button>
       </div>

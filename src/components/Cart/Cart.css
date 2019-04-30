@@ -1,8 +1,8 @@
 #cart::before {
   display: block;
   content: " ";
-  margin-top: -9vh;
-  height: 9vh;
+  margin-top: -21vh;
+  height: 21vh;
   visibility: hidden;
   pointer-events: none;
 }
@@ -114,9 +114,9 @@
 }
 
 .stripe {
-  justify-content: center;
+  /* justify-content: center; */
   color: #c3c3c3;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .example p {

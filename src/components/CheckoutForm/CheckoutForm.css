@@ -1,8 +1,28 @@
 .checkout {
-  border: green solid 1px;
+  /* height: 100%; */
+  /* border: green solid 1px; */
   /* margin: 0 35vw; */
 }
 
-.cart-button {
-  /* padding: 4px; */
+.c-pay {
+  margin-bottom: 20px;
+}
+
+.c-button {
+  font-family: "Segoe UI";
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: #222222;
+  border: 4px solid #222222;
+  border-radius: 2px;
+  /* margin-right: 8px; */
+  /* padding: 0 8px; */
+  /* float: left; */
+}
+
+.success {
+  /* margin-bottom: 20px; */
+  font-size: 16px;
+  color: rgb(102, 102, 102);
 }

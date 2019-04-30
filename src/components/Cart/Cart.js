@@ -17,7 +17,7 @@ class Cart extends Component {
 
   checkout = () => {
     if (this.props.cartBoards.length) {
-      axios.delete("/api/cart/checkout").then(res => {
+      axios.delete("/api/checkout").then(res => {
         alert("Payment Successful!")
         this.props.getCart(res.data)
       })
@@ -63,7 +63,7 @@ class Cart extends Component {
                 <div className="so-total">
                   Estimated total
                   <span class="so-span">
-                    ${Math.floor(cartTotal * 100) / 100}
+                    ${Math.floor(cartTotal + salesTax)}
                   </span>
                 </div>
               </div>

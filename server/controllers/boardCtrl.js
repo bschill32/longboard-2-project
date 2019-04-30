@@ -63,15 +63,22 @@ module.exports = {
   deleteBoard: (req, res) => {
     let db = req.app.get("db")
     let { id } = req.params
-    db.delete_board(id).then(response => {
-      res.status(200).send(response)
-    })
+    // console.log(id)
+    db.delete_board(id)
+      .then(response => {
+        res.status(200).send(response)
+      })
+      .catch(err => console.log("deleteBoard error", err))
   },
 
   checkout: (req, res) => {
+    // console.log("incheckout")
     let db = req.app.get("db")
-    db.checkout().then(response => {
-      res.status(200).send(response)
-    })
+    db.checkout()
+      .then(response => {
+        // console.log("dbcall")
+        res.status(200).send(response)
+      })
+      .catch(err => console.log("checkout error", err))
   }
 }
