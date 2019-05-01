@@ -67,6 +67,18 @@
   display: block;
 }
 
+.bin-top hr {
+  border: 0;
+  background: #f44805;
+  margin-left: 0;
+  margin-right: 0;
+  height: 1.5px;
+  width: 75%;
+  margin-top: 15px;
+  border-radius: 1px;
+  margin-bottom: 10%;
+}
+
 .bin-top-half {
   margin-bottom: 1.69rem;
 }
@@ -91,7 +103,7 @@
 }
 
 .bin-ul {
-  margin-bottom: 19%;
+  margin-bottom: 10%;
   /* padding-left: 35px; */
 }
 

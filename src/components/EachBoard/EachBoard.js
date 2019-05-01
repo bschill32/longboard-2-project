@@ -60,6 +60,7 @@ class Board extends Component {
                 <h3>{range}</h3>
               </li>
             </ul>
+            <hr />
           </div>
           <div className="bin-bottom">
             <h2>${price}</h2>
