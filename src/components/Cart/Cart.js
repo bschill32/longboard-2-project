@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 import { connect } from "react-redux"
 import { Elements, StripeProvider } from "react-stripe-elements"
+import swal from "sweetalert"
 
 import "./Cart.css"
 import CartBoards from "../CartBoards/CartBoards"
@@ -11,6 +12,14 @@ import CheckoutForm from "../CheckoutForm/CheckoutForm"
 // const { STRIPE_TEST_KEY } = process.env
 
 class Cart extends Component {
+  // constructor(props) {
+  //   super(props)
+
+  //   this.state = {
+  //     toggle: true
+  //   }
+  // }
+
   componentDidMount() {
     this.props.getCart()
   }
@@ -18,7 +27,12 @@ class Cart extends Component {
   checkout = () => {
     if (this.props.cartBoards.length) {
       axios.delete("/api/checkout").then(res => {
-        alert("Payment Successful!")
+        swal({
+          title: "Payment Successful!",
+          text: "Come back soon :)",
+          icon: "success",
+          button: "Aww yiss!"
+        })
         this.props.getCart(res.data)
       })
     } else {
@@ -27,6 +41,13 @@ class Cart extends Component {
   }
 
   render() {
+    // if (this.props.cartBoards.length) {
+    //   this.setState({
+    //     toggle: true
+    //   })
+    // }
+    // let { toggle } = this.state
+    //className={toggle ? "cartComp" : "cartComp gone"}
     let cartTotal = 0
     let cart = this.props.cartBoards.map(val => {
       cartTotal += val.price * val.quantity
@@ -39,8 +60,17 @@ class Cart extends Component {
         {/* <div className="page-container">
           <h1 className="page-title">Cart</h1>
         </div> */}
+        {/* <div className="checkout-container">
+          <hr className="c-hr-left" />
+          <div class="c-header">
+            <h1>Checkout</h1>
+          </div>
+          <hr className="c-hr-right" />
+        </div> */}
         <div className="cart-container">
-          <div className="c-info">{cart}</div>
+          <div className="ccc">
+            <div className="c-info">{cart}</div>
+          </div>
           <div className="stripe-container">
             <div className="sc-1">
               <div className="s-order">

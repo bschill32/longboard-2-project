@@ -56,6 +56,12 @@
   padding: 0 5px;
 }
 
+.fab:hover {
+  /* background-color: #222222; */
+  color: black;
+  transform: scale(1.25);
+  /* border: 2px solid #f44805; */
+}
 .reviews-container {
   /* border: solid black 1px; */
   /* padding-top: 0.94rem; */

@@ -30,6 +30,7 @@ class CheckoutForm extends Component {
     return (
       <div className="checkout">
         <CardElement className="c-pay" />
+        <hr />
         <button className="c-button" onClick={this.submit}>
           Buy Now
         </button>
