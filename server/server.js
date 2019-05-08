@@ -2,13 +2,36 @@ require("dotenv").config()
 const express = require("express"),
   massive = require("massive"),
   session = require("express-session")
+// cors = require("cors"),
+// twilio = require("twilio")
 
 const app = express(),
   BoardCtrl = require("./controllers/boardCtrl"),
   AuthCtrl = require("./controllers/authCtrl"),
   StripeCtrl = require("./controllers/stripeCtrl")
 
-const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env
+const {
+  SERVER_PORT,
+  CONNECTION_STRING,
+  SESSION_SECRET
+  // accountSid,
+  // authToken
+} = process.env
+// const client = new twilio(accountSid, authToken)
+
+// app.use(cors())
+
+// app.get("/send-text", (req, res) => {
+//   const { recipient, textmessage } = req.query
+
+//   client.messages
+//     .create({
+//       body: textmessage,
+//       to: recipient,
+//       from: "+18082011561"
+//     })
+//     .then(message => console.log(message.sid))
+// })
 
 massive(CONNECTION_STRING).then(db => {
   app.set("db", db)

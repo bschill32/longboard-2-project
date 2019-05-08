@@ -229,3 +229,243 @@
   width: 100%;
   font-size: 1rem;
 }
+
+@media (max-width: 769px) {
+  .c-container {
+    /* margin-top: 0.94rem; */
+    margin-bottom: 0.94rem;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* flex-direction: column; */
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+
+  .cc-img {
+    display: block;
+    padding-right: 10px;
+    width: 57%;
+  }
+
+  .ci-top {
+    display: flex;
+  }
+
+  .ci-1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f44805;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+  }
+
+  .ci-1 h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+
+    /* font-family: "Amatic SC", cursive; */
+  }
+
+  .ci-text {
+    padding-left: 0.63rem;
+    display: flex;
+    flex-direction: column;
+    /* align-content: left; */
+  }
+
+  .ci-text h3 {
+    color: rgb(221, 221, 221);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.32;
+    letter-spacing: 0.1em;
+  }
+
+  .cic {
+    /* height: 0px; */
+    /* padding-top: 60%; */
+    /* position: relative; */
+  }
+
+  .cic img {
+    align-self: center;
+    opacity: 1;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .c-infoPage {
+    width: 43%;
+    display: flex;
+    /* -webkit-box-pack: justify; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+    /* flex: 1 0 40%; */
+  }
+
+  .cin-top {
+    display: block;
+  }
+
+  .cin-top-half {
+    margin-bottom: 5%;
+  }
+
+  .cin-top-half h2 {
+    margin-bottom: 0.12rem;
+    color: rgb(34, 34, 34);
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.32;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .cin-top-half p {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.55;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    width: initial;
+  }
+
+  .cin-ul {
+    margin-bottom: 5%;
+    display: none;
+    /* padding-left: 35px; */
+  }
+
+  .cin-ul li {
+    display: flex;
+  }
+
+  .cin-icon {
+    color: rgb(102, 102, 102);
+  }
+  .cin-ul li h3 {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.32;
+    color: rgb(102, 102, 102);
+    width: 100%;
+    font-size: 12px;
+    margin-left: 15px;
+    /* margin-bottom: 5px; */
+  }
+
+  .cin-bottom {
+    display: flex;
+    height: 100%;
+  }
+
+  .cin-bottom h2 {
+    color: rgb(34, 34, 34);
+    font-size: 32px;
+    /* text-align: left; */
+    margin-bottom: 0.44rem;
+    color: rgb(34, 34, 34);
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.32;
+    width: 100%;
+    min-height: 2.63rem;
+  }
+
+  .cin-bottom p {
+    color: rgb(102, 102, 102);
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.55;
+    width: 100%;
+    font-size: 1rem;
+    position: relative;
+    margin-bottom: 1.13rem;
+    display: none;
+  }
+
+  .cin-bottom p img {
+    height: 20px;
+    position: absolute;
+    /* top: 1px; */
+    /* margin-left: -3px; */
+    display: none;
+  }
+
+  .cin-buttons {
+    display: inline-grid;
+    height: 0px;
+
+    /* justify-content: space-between; */
+  }
+
+  .cin-button {
+    font-family: "Segoe UI";
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    background: #222222;
+    border: 2px solid #222222;
+    border-radius: 2px;
+    margin: 10px 8px 10px 8px;
+    padding: 2px 5px;
+    outline: none;
+  }
+
+  .cin-button:active {
+    transform: scale(0.95);
+  }
+
+  .cin-button:hover {
+    background-color: #222222;
+    color: #ffffff;
+    /* transform: scale(1.05); */
+    border: 2px solid #f44805;
+  }
+
+  .cin-button2 {
+    font-family: "Segoe UI";
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    background: #ffffff;
+    color: #222222;
+    border: 2px solid #222222;
+    border-radius: 2px;
+    margin: 0px 8px 10px 8px;
+    text-decoration: none;
+    padding: 2px 5px;
+    outline: none;
+  }
+
+  .cin-button2:active {
+    transform: scale(0.97);
+  }
+
+  .cin-button2:hover {
+    background-color: #ffffff;
+    color: #222222;
+    /* transform: scale(1.05); */
+    border: 2px solid #f44805;
+  }
+
+  .c-ship {
+    margin-top: 0.94rem;
+    color: #666666;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.55;
+    width: 100%;
+    font-size: 1rem;
+    display: none;
+  }
+}

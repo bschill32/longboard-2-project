@@ -9,14 +9,15 @@ import CartBoards from "../CartBoards/CartBoards"
 import { getCart } from "../../ducks/reducers/cartReducer"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
 
-// const { STRIPE_TEST_KEY } = process.env
-
 class Cart extends Component {
   // constructor(props) {
   //   super(props)
 
   //   this.state = {
-  //     toggle: true
+  //     text: {
+  //       recipient: "+18083489461",
+  //       textmessage: "You have a New Order!"
+  //     }
   //   }
   // }
 
@@ -39,6 +40,15 @@ class Cart extends Component {
       alert("You need to add something to your Cart!")
     }
   }
+
+  // sendText = () => {
+  //   const { text } = this.state
+  //   fetch(
+  //     `http://localhost:3232/send-text?recipient=${
+  //       text.recipient
+  //     }&textmessage=${text.textmessage}`
+  //   ).catch(err => console.error(err))
+  // }
 
   render() {
     // if (this.props.cartBoards.length) {

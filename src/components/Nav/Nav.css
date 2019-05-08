@@ -83,3 +83,48 @@
 .links a:hover {
   color: #f44805;
 }
+
+@media (max-width: 769px) {
+  #navbar {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 2px 2px;
+    /* border-bottom-left-radius: 20px 10%;
+    border-bottom-right-radius: 20px 10%; */
+  }
+
+  .logo {
+    margin-left: 2%;
+    /* color: black; */
+    /* text-decoration: none; */
+    /* text-shadow: 3px 5px 5px #000; */
+    font-family: "Rock Salt", cursive;
+    width: 11vw;
+    /* color: rgb(102, 102, 102); */
+  }
+
+  .logo img {
+    width: 100%;
+    color: black;
+    background-color: purple;
+  }
+  .links {
+    margin-right: 2%;
+  }
+
+  .links a {
+    font-size: 2vw;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    /* text-shadow: 3px 5px 5px #000; */
+  }
+}
