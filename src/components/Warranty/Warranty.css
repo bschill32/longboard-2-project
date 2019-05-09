@@ -255,9 +255,9 @@
 
   .wa-1::before {
     content: "";
-    top: 4.5rem;
+    top: 3.5rem;
     position: absolute;
-    height: 3.8rem;
+    height: 2.4rem;
     width: 1px;
     background: #666666;
   }
@@ -265,8 +265,8 @@
   .wa-1 {
     text-align: center;
     max-width: 22.5rem;
-    padding-bottom: 7rem;
-    padding-top: 10rem;
+    padding-bottom: 4rem;
+    padding-top: 7rem;
     margin: 0 auto;
     position: relative;
     /* z-index: 203; */
@@ -274,9 +274,9 @@
 
   .wa-1::after {
     content: "";
-    bottom: 1.88rem;
+    bottom: 1.4rem;
     position: absolute;
-    height: 3.5rem;
+    height: 1.4rem;
     width: 1px;
     background: #666666;
   }
